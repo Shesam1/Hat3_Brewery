@@ -1,17 +1,19 @@
 <div class="ShadowBox"></div>
 <br><br><h4>Please Login Below</h4>
 
-<br><center><i class="em em-christmas_tree"></i> <i class="em em-snowman"></i> <i class="em em-christmas_tree"></i>
+<center><i class="em em-christmas_tree"></i> <i class="em em-snowman"></i> <i class="em em-christmas_tree"></i>
 
 <br><center><%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
     <br><%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
+    <p> Hint - use: sherill@sherill.com </p>
   </div>
 
   <div class="field">
     <%= f.label :password %><br />
     <%= f.password_field :password, autocomplete: "off" %>
+    <p> Hint - use: password </p>
   </div>
 
   <% if devise_mapping.rememberable? -%>
