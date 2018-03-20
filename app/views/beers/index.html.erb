@@ -1,0 +1,23 @@
+
+
+<br><br><br>
+
+
+<% @beers.each do |beer| %>
+
+<figure class="snip1577 hover">
+  <%= image_tag beer.photo.url(:medium), class: "img" %>
+  <figcaption>
+   
+  </figcaption>
+
+  <h3><%= link_to beer.name, beer %></h3>
+  
+</figure>
+
+<% end %>
+<br><br><br><br><br><br><br>
+
+<!-- <br><%= link_to 'New Beer', new_beer_path %> -->
+
+<div class="HomeBeer-img"></div>

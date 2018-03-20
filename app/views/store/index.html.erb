@@ -1,0 +1,19 @@
+<% @beers.each do |beer| %>
+
+<div class="beer-card">
+  <div class="beer-image-store">
+    <%= image_tag beer.photo.url(:medium), class: "img" %>
+  </div>
+
+  <div class="beer-details-store">
+    <h1><%= beer.name %></h1>
+    <p>INFO</p>
+    <p>ABV:<%= beer.abv %></p>
+    <p>IBU:<%= beer.ibu %></p>
+    
+    <span class="price"><%= number_to_currency(beer.price6) %></span>
+
+    <%= button_to 'Add to Cart', line_items_path(beer_id: beer), :class => 'store-button' %>
+  </div>
+</div>
+<% end %>

@@ -1,0 +1,45 @@
+<!-- <div class="header" id="top"> -->
+  <!-- <h4>HAT3</h4> -->
+<br><br><br><br><br><br><br><br><br><br>
+  <i class="fa fa-angle-down animated bounce"></i>
+</div>
+
+<% @posts.each do |post| %>
+<div class="section animate">
+  <div class="middle">
+      <%= image_tag post.photo.url(:large), class: "img" %>
+  </div>
+  <div class="left title">
+    <div class="content">
+      <p><%#= link_to 'Show', post %></p>
+
+      <p><%= link_to post.title, post_path(post), class: 'btn btn-info' %><p>
+      <h2><%#= post.title %></h2>
+    </div>
+  </div>
+  <div class="right tiles">
+    <%= image_tag post.photo.url(:medium), class: "img" %>
+    <%= image_tag post.photo.url(:medium), class: "img" %>
+    <%= image_tag post.photo.url(:medium), class: "img" %>
+    <%= image_tag post.photo.url(:medium), class: "img" %>
+  </div>
+</div>
+<% end %>
+
+
+<!-- <div class="footer">
+  <a href="#top" class="scrollTo">
+    <i class="fa fa-angle-up animated bounce"></i>
+  </a>
+
+</div> -->
+
+<br>
+
+  <div class="UsersSnow-img">
+    <div class="logo-img">
+    <%= image_tag "CapLawLogo.png"%></div>
+    <div class="hat3-img">
+    <%= image_tag "Hat3.jpg", width: "156"%></div>
+  </div>
+  <div class="BeersBackground-img"><div>

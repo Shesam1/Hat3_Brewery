@@ -1,0 +1,7 @@
+I"k(function() {
+  jQuery(function() {
+    return $('#article_date').datepicker();
+  });
+
+}).call(this);
+:ET

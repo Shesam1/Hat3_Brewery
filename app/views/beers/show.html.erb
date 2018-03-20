@@ -1,0 +1,58 @@
+<main class="containershow">
+
+  <!-- Left Column -->
+  <div class="left-column">
+    <%= image_tag @beer.photo.url(:medium), class: "img" %>
+  </div>
+
+  <!-- Right Column -->
+  <div class="right-column">
+    <!-- Beer Description -->
+    <div class="beer-description">
+      <h1><%= @beer.name %></h1>
+      <p><%= @beer.description %></p>
+    </div>
+    <!-- Beer Configuration -->
+    <div class="product-configuration">
+
+      <!-- Beer Info -->
+      <div class="beer-color">
+        <div class="color-choose">
+          <div>
+            <h3>Beer Style:</h3>
+          </div><br>
+          <div>
+            <h5>ABV: <%= @beer.abv %></h5>
+          </div><br>
+          <div>
+            <h5>IBU: <%= @beer.ibu %></h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sizes -->
+      <div class="cable-config">
+        <h3>Availability:</h3>
+        <div class="beer-choose">
+          <p>6-packs</p>
+          <p>12-packs</p>
+          <p>Cases</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div class="foodpairing">
+  <img <%= image_tag "sensory.jpg" %>
+  <span id = "foodpairingtext"> Food Pairing</span>
+</div>
+<div class="locations"> <div id="map"></div>
+
+
+</div>
+
+<%= link_to 'Edit', edit_beer_path(@beer) %>|
+<%= link_to 'Back', beers_path %>
+
+<div class="BeerBeer-img"></div>

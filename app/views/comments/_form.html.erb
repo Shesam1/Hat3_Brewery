@@ -1,0 +1,21 @@
+<h3>Post Your Comment</h3>
+
+<%= form_for [@post, @comment] do |f| %>
+
+<p style="font-size: 15px;">
+  <%= f.label :author_name , "Your Name"%><br>
+  <%=f.text_field :author_name%>
+</p>
+<p style="font-size: 15px;">
+  <%= f.label :body, "Your Comment"%><br>
+  <%=f.text_field :body%>
+</p>
+<p>
+  <%=f.submit :"Submit", class: 'btn btn-info'%>
+</p>
+<br><br>
+
+<% end %>
+
+<div class="UsersSnow-img"></div>
+<div class="LoginBeersBackground-img"><div>
