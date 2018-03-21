@@ -60,10 +60,6 @@ group :development do
 end
 
 group :development do
-  gem 'sqlite3'
-end
-
-group :development do
   gem 'rails_12factor'
 end
 
