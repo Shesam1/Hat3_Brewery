@@ -11,14 +11,7 @@ gem 'paperclip'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
 
-group :production do
-  gem 'pg'
-  gem 'rails_12factor'
-end
-
-group :development do
-  gem 'sqlite3'
-end
+gem 'pg'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
