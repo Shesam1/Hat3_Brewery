@@ -19422,331 +19422,165 @@ Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-03-20 15:08:23 -0400
 Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
 BeersChannel is transmitting the subscription confirmation
 BeersChannel is streaming from beers
-  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
-  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
-            FROM sqlite_master
-            WHERE name='index_comments_on_post_id' AND type='index'
-            UNION ALL
-            SELECT sql
-            FROM sqlite_temp_master
-            WHERE name='index_comments_on_post_id' AND type='index'
-[0m
-  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
-            FROM sqlite_master
-            WHERE name='index_line_items_on_order_id' AND type='index'
-            UNION ALL
-            SELECT sql
-            FROM sqlite_temp_master
-            WHERE name='index_line_items_on_order_id' AND type='index'
-[0m
-  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
-            FROM sqlite_master
-            WHERE name='index_line_items_on_cart_id' AND type='index'
-            UNION ALL
-            SELECT sql
-            FROM sqlite_temp_master
-            WHERE name='index_line_items_on_cart_id' AND type='index'
-[0m
-  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
-            FROM sqlite_master
-            WHERE name='index_line_items_on_beer_id' AND type='index'
-            UNION ALL
-            SELECT sql
-            FROM sqlite_temp_master
-            WHERE name='index_line_items_on_beer_id' AND type='index'
-[0m
-  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
-            FROM sqlite_master
-            WHERE name='index_posts_on_user_id' AND type='index'
-            UNION ALL
-            SELECT sql
-            FROM sqlite_temp_master
-            WHERE name='index_posts_on_user_id' AND type='index'
-[0m
-  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
-            FROM sqlite_master
-            WHERE name='index_users_on_reset_password_token' AND type='index'
-            UNION ALL
-            SELECT sql
-            FROM sqlite_temp_master
-            WHERE name='index_users_on_reset_password_token' AND type='index'
-[0m
-  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
-            FROM sqlite_master
-            WHERE name='index_users_on_email' AND type='index'
-            UNION ALL
-            SELECT sql
-            FROM sqlite_temp_master
-            WHERE name='index_users_on_email' AND type='index'
-[0m
-Started GET "/cable" for 127.0.0.1 at 2018-03-20 18:01:28 -0400
   [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-03-20 18:01:28 -0400
-Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
-BeersChannel is transmitting the subscription confirmation
-BeersChannel is streaming from beers
-Started GET "/" for 127.0.0.1 at 2018-03-20 18:01:31 -0400
-Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (652.3ms)
-  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
-Completed 200 OK in 956ms (Views: 931.5ms | ActiveRecord: 2.3ms)
-
-
-Started GET "/cable" for 127.0.0.1 at 2018-03-20 18:01:32 -0400
-Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-03-20 18:01:32 -0400
-Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
-BeersChannel is transmitting the subscription confirmation
-BeersChannel is streaming from beers
-Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-03-20 18:01:35 -0400
-BeersChannel stopped streaming from beers
-Started GET "/" for 127.0.0.1 at 2018-03-20 18:01:38 -0400
-Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (4.0ms)
-  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
-Completed 200 OK in 151ms (Views: 148.0ms | ActiveRecord: 0.4ms)
-
-
-Started GET "/cable" for 127.0.0.1 at 2018-03-20 18:01:39 -0400
-Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-03-20 18:01:39 -0400
-Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
-BeersChannel is transmitting the subscription confirmation
-BeersChannel is streaming from beers
-Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-03-20 18:01:40 -0400
-Processing by Devise::SessionsController#destroy as HTML
-  Parameters: {"authenticity_token"=>"Oc+PS7Xu22lCsVPpi7AgJ8WS3yM0n62aqmOxaqXfL7o22a+vHxpA4AMiPJVWKEB17XpVVXSunMzn/gBU3LyX2A=="}
-  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
-  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
   [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
-Redirected to http://localhost:3000/
-Completed 302 Found in 52ms (ActiveRecord: 0.7ms)
-
-
-Started GET "/" for 127.0.0.1 at 2018-03-20 18:01:40 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_post_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_post_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_line_items_on_order_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_line_items_on_order_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_line_items_on_cart_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_line_items_on_cart_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_line_items_on_beer_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_line_items_on_beer_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_posts_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_posts_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/" for 127.0.0.1 at 2018-03-20 21:55:08 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by HomeController#index as HTML
   Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (9.7ms)
-Completed 200 OK in 215ms (Views: 211.7ms | ActiveRecord: 0.0ms)
+  Rendered home/index.html.erb within layouts/application (833.7ms)
+Completed 200 OK in 1138ms (Views: 1111.4ms | ActiveRecord: 0.0ms)
 
 
-Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-03-20 18:01:41 -0400
-BeersChannel stopped streaming from beers
-Started GET "/cable" for 127.0.0.1 at 2018-03-20 18:01:41 -0400
-Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-03-20 18:01:41 -0400
+Started GET "/cable" for 127.0.0.1 at 2018-03-20 21:55:10 -0400
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-03-20 21:55:10 -0400
 Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
 BeersChannel is transmitting the subscription confirmation
 BeersChannel is streaming from beers
-Started GET "/users" for 127.0.0.1 at 2018-03-20 18:01:43 -0400
+Started GET "/users" for 127.0.0.1 at 2018-03-20 21:55:14 -0400
 Processing by UsersController#index as HTML
   Rendering users/index.html.erb within layouts/application
-  Rendered users/index.html.erb within layouts/application (4.1ms)
-Completed 200 OK in 149ms (Views: 144.8ms | ActiveRecord: 0.0ms)
+  Rendered users/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 158ms (Views: 151.1ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-20 18:01:44 -0400
-Processing by Devise::SessionsController#new as HTML
-  Rendering devise/sessions/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (2.6ms)
-  Rendered devise/sessions/new.html.erb within layouts/application (37.5ms)
-Completed 200 OK in 173ms (Views: 170.5ms | ActiveRecord: 0.0ms)
-
-
-Started POST "/users/sign_in" for 127.0.0.1 at 2018-03-20 18:01:54 -0400
-Processing by Devise::SessionsController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nmd5gCoqq/0WmFfEl09g6e99qWb6+bUefpT3GNLKR3NIfqSQwcGIxpJbRdd592wjnRyZxEEEiqZ98nb07Pymjw==", "user"=>{"email"=>"sherill@sherill.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
-  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "sherill@sherill.com"], ["LIMIT", 1]]
-  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35mSQL (1.6ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-03-20 22:01:54.733560"], ["last_sign_in_at", "2018-03-20 18:56:06.605463"], ["sign_in_count", 17], ["updated_at", "2018-03-20 22:01:54.734572"], ["id", 3]]
-  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
-Redirected to http://localhost:3000/beers
-Completed 302 Found in 238ms (ActiveRecord: 3.3ms)
-
-
-Started GET "/beers" for 127.0.0.1 at 2018-03-20 18:01:54 -0400
-Processing by BeersController#index as HTML
-  Rendering beers/index.html.erb within layouts/application
-  [1m[36mBeer Load (0.9ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
-  Rendered beers/index.html.erb within layouts/application (27.6ms)
-  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
-Completed 200 OK in 172ms (Views: 154.8ms | ActiveRecord: 2.3ms)
-
-
-Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-03-20 18:01:54 -0400
-BeersChannel stopped streaming from beers
-Started GET "/cable" for 127.0.0.1 at 2018-03-20 18:01:55 -0400
-Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-03-20 18:01:55 -0400
-Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
-BeersChannel is transmitting the subscription confirmation
-BeersChannel is streaming from beers
-Started GET "/users/sign_out" for 127.0.0.1 at 2018-03-20 18:03:20 -0400
-  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by UsersController#show as HTML
-  Parameters: {"id"=>"sign_out"}
-  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
-Completed 404 Not Found in 31ms (ActiveRecord: 2.4ms)
-
-
-  
-ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
-  
-app/controllers/users_controller.rb:68:in `set_user'
-Started GET "/cable" for 127.0.0.1 at 2018-03-20 18:03:20 -0400
-Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-03-20 18:03:20 -0400
-Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
-BeersChannel is transmitting the subscription confirmation
-BeersChannel is streaming from beers
-Started GET "/cable" for 127.0.0.1 at 2018-03-20 18:03:28 -0400
-Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-03-20 18:03:28 -0400
-Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
-BeersChannel is transmitting the subscription confirmation
-BeersChannel is streaming from beers
-Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-03-20 18:03:30 -0400
-Processing by Devise::SessionsController#destroy as HTML
-  Parameters: {"authenticity_token"=>"afdWnuS1+0ys03/UDxLkKkbyQEhy48QX1jTr3sjr3vJb4i+d9KFIUKWsmnunViaTrSCzIPPX2scxuxqjv2L3rw=="}
-  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
-  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
-Redirected to http://localhost:3000/
-Completed 302 Found in 56ms (ActiveRecord: 0.5ms)
-
-
-Started GET "/" for 127.0.0.1 at 2018-03-20 18:03:30 -0400
-Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (628.3ms)
-Completed 200 OK in 913ms (Views: 909.8ms | ActiveRecord: 0.0ms)
-
-
-Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-03-20 18:03:31 -0400
-BeersChannel stopped streaming from beers
-Started GET "/cable" for 127.0.0.1 at 2018-03-20 18:03:31 -0400
-Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-03-20 18:03:31 -0400
-Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
-BeersChannel is transmitting the subscription confirmation
-BeersChannel is streaming from beers
-Started GET "/users" for 127.0.0.1 at 2018-03-20 18:03:33 -0400
-Processing by UsersController#index as HTML
-  Rendering users/index.html.erb within layouts/application
-  Rendered users/index.html.erb within layouts/application (2.9ms)
-Completed 200 OK in 106ms (Views: 95.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-20 18:03:37 -0400
-Processing by Devise::SessionsController#new as HTML
-  Rendering devise/sessions/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (1.7ms)
-  Rendered devise/sessions/new.html.erb within layouts/application (18.4ms)
-Completed 200 OK in 125ms (Views: 122.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-20 18:06:10 -0400
-Processing by Devise::SessionsController#new as HTML
-  Rendering devise/sessions/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (1.1ms)
-  Rendered devise/sessions/new.html.erb within layouts/application (6.1ms)
-Completed 200 OK in 176ms (Views: 174.6ms | ActiveRecord: 0.0ms)
-
-
-Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-03-20 18:06:10 -0400
-BeersChannel stopped streaming from beers
-Started GET "/cable" for 127.0.0.1 at 2018-03-20 18:06:12 -0400
-Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-03-20 18:06:12 -0400
-Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
-BeersChannel is transmitting the subscription confirmation
-BeersChannel is streaming from beers
-Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-20 18:07:18 -0400
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-20 21:55:16 -0400
 Processing by Devise::SessionsController#new as HTML
   Rendering devise/sessions/new.html.erb within layouts/application
   Rendered devise/shared/_links.html.erb (1.8ms)
-  Rendered devise/sessions/new.html.erb within layouts/application (8.6ms)
-Completed 200 OK in 213ms (Views: 211.8ms | ActiveRecord: 0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (65.4ms)
+Completed 200 OK in 414ms (Views: 269.4ms | ActiveRecord: 1.7ms)
 
 
-Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-03-20 18:07:18 -0400
-BeersChannel stopped streaming from beers
-Started GET "/cable" for 127.0.0.1 at 2018-03-20 18:07:18 -0400
-Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-03-20 18:07:18 -0400
+Started GET "/cable" for 127.0.0.1 at 2018-03-20 21:55:30 -0400
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-03-20 21:55:30 -0400
 Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
 BeersChannel is transmitting the subscription confirmation
 BeersChannel is streaming from beers
-Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-20 18:07:41 -0400
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-20 21:57:04 -0400
 Processing by Devise::SessionsController#new as HTML
   Rendering devise/sessions/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (1.0ms)
-  Rendered devise/sessions/new.html.erb within layouts/application (5.0ms)
-Completed 200 OK in 137ms (Views: 135.5ms | ActiveRecord: 0.0ms)
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 219ms (Views: 216.6ms | ActiveRecord: 0.0ms)
 
 
-Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-03-20 18:07:42 -0400
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-03-20 21:57:04 -0400
 BeersChannel stopped streaming from beers
-Started GET "/cable" for 127.0.0.1 at 2018-03-20 18:07:42 -0400
-Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-03-20 18:07:42 -0400
+Started GET "/cable" for 127.0.0.1 at 2018-03-20 21:57:04 -0400
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-03-20 21:57:04 -0400
 Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
 BeersChannel is transmitting the subscription confirmation
 BeersChannel is streaming from beers
-  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-03-20 21:57:24 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UkM+VrDMudn5uCv7zfVd1CGr6eqZSb04xnPLwPuU0am/IM8Y6D1vLDm/ZyGLpGGaVxO4UG8HiKheHkFSlvl7Ag==", "user"=>{"email"=>"sherill@sherill.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "sherill@sherill.com"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-03-21 01:57:24.551512"], ["last_sign_in_at", "2018-03-20 18:56:06.605463"], ["sign_in_count", 17], ["updated_at", "2018-03-21 01:57:24.554042"], ["id", 3]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/beers
+Completed 302 Found in 330ms (ActiveRecord: 8.4ms)
+
+
+Started GET "/beers" for 127.0.0.1 at 2018-03-20 21:57:24 -0400
+Processing by BeersController#index as HTML
+  Rendering beers/index.html.erb within layouts/application
+  [1m[36mBeer Load (0.7ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  Rendered beers/index.html.erb within layouts/application (45.8ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 248ms (Views: 228.0ms | ActiveRecord: 2.5ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-03-20 21:57:24 -0400
+BeersChannel stopped streaming from beers
+Started GET "/cable" for 127.0.0.1 at 2018-03-20 21:57:25 -0400
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-03-20 21:57:25 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+BeersChannel is transmitting the subscription confirmation
+BeersChannel is streaming from beers
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-03-20 21:57:29 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"HE8BdBjDItCCFLmsjuXWVewD8ZwrphY5xUCUC1vNGLouWJvo4gOBpbd4PRTZd7+OhhyXBFj4z0rRws3ajJbMiQ=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
-            FROM sqlite_master
-            WHERE name='index_comments_on_post_id' AND type='index'
-            UNION ALL
-            SELECT sql
-            FROM sqlite_temp_master
-            WHERE name='index_comments_on_post_id' AND type='index'
-[0m
-  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
-            FROM sqlite_master
-            WHERE name='index_line_items_on_order_id' AND type='index'
-            UNION ALL
-            SELECT sql
-            FROM sqlite_temp_master
-            WHERE name='index_line_items_on_order_id' AND type='index'
-[0m
-  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
-            FROM sqlite_master
-            WHERE name='index_line_items_on_cart_id' AND type='index'
-            UNION ALL
-            SELECT sql
-            FROM sqlite_temp_master
-            WHERE name='index_line_items_on_cart_id' AND type='index'
-[0m
-  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
-            FROM sqlite_master
-            WHERE name='index_line_items_on_beer_id' AND type='index'
-            UNION ALL
-            SELECT sql
-            FROM sqlite_temp_master
-            WHERE name='index_line_items_on_beer_id' AND type='index'
-[0m
-  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
-            FROM sqlite_master
-            WHERE name='index_posts_on_user_id' AND type='index'
-            UNION ALL
-            SELECT sql
-            FROM sqlite_temp_master
-            WHERE name='index_posts_on_user_id' AND type='index'
-[0m
-  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
-            FROM sqlite_master
-            WHERE name='index_users_on_reset_password_token' AND type='index'
-            UNION ALL
-            SELECT sql
-            FROM sqlite_temp_master
-            WHERE name='index_users_on_reset_password_token' AND type='index'
-[0m
-  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
-            FROM sqlite_master
-            WHERE name='index_users_on_email' AND type='index'
-            UNION ALL
-            SELECT sql
-            FROM sqlite_temp_master
-            WHERE name='index_users_on_email' AND type='index'
-[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-20 21:57:29 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 206ms (Views: 203.4ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-03-20 21:57:29 -0400
+BeersChannel stopped streaming from beers
+Started GET "/cable" for 127.0.0.1 at 2018-03-20 21:57:29 -0400
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-03-20 21:57:29 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+BeersChannel is transmitting the subscription confirmation
+BeersChannel is streaming from beers
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-03-20 21:57:30 -0400
+BeersChannel stopped streaming from beers
