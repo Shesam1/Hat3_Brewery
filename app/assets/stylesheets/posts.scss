@@ -219,7 +219,7 @@ body {
 /*------------- Post View Show ----------*/
 @import "bourbon";
 * {
-  @include box-sizing(border-box);
+  box-sizing: border-box;
 }
 
 /*// html {
@@ -559,7 +559,7 @@ body {
 @import "bourbon";
 
 * {
-  @include box-sizing(border-box);
+  box-sizing: border-box;
 }
 
 html {
